@@ -69,38 +69,28 @@ const sendOtp = (req, res) => {
 
     <!-- Signature Section -->
     <tr style="padding: 1rem;" align="start">
-      <td>
-        <table style="width: 100%; text-align: start; display: flex">
-          <tr>
-            <td style="padding-bottom: 1rem;">
-              <img src="https://media.licdn.com/dms/image/v2/C4D0BAQH6fJz1s57_eA/company-logo_200_200/company-logo_200_200/0/1630509348990/forwardcode_techstudio_logo?e=1736985600&v=beta&t=nlMSUu3V4zzN6zA9rlbOjdJE7IdnugYYZniJ09UTlNo" 
-              alt="logo" style="width: 90px; height: 90px; background-color: white; margin-bottom: 1rem;">
-            </td>
-          </tr>
-          <tr>
-          <tr>
-            <td style="font-size: 12px; color: #5e5e5e;">
-              <table>
-                <tbody>
-                  <tr>
-                    <td style="font-size: 12px; color: #5e5e5e;">hr@forwardcode.in</td>
-                  </tr>
-                  <tr>
-                    <td style="padding-top: 1rem;">
-                      <a href="#" style="font-size: 12px; color: #007bff; text-decoration: none;">Check what's new:</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td style="font-size: 12px; color: #007bff;">https://forwardcode.in</td>
-                  </tr>
-                </tbody>
-              </table>
-            </td>
-          </tr>
-        </tr>
-        </table>
-      </td>
-    </tr>
+  <td>
+    <table width="100%" style="text-align: start;">
+      <tr>
+        <td style="padding-bottom: 1rem;" width="90">
+          <img src="https://media.licdn.com/dms/image/v2/C4D0BAQH6fJz1s57_eA/company-logo_200_200/company-logo_200_200/0/1630509348990/forwardcode_techstudio_logo?e=1736985600&v=beta&t=nlMSUu3V4zzN6zA9rlbOjdJE7IdnugYYZniJ09UTlNo" 
+          alt="logo" style="width: 90px; height: 90px; background-color: white; margin-bottom: 1rem;">
+        </td>
+        <td style="padding-left: 1rem;">
+          <p style="font-size: 14px; font-weight: bold; color: #333;">TEAM HR</p>
+          <p style="font-size: 12px; color: #5e5e5e;">Forwardcode TechStudio</p>
+          <p style="font-size: 12px; color: #5e5e5e;">Jamshedpur, JH - 831018</p>
+          <p style="font-size: 12px; color: #5e5e5e;">hr@forwardcode.in</p>
+          <p style="padding-top: 1rem;">
+            <a href="#" style="font-size: 12px; color: #007bff; text-decoration: none;">Check what's new:</a>
+          </p>
+          <p style="font-size: 12px; color: #007bff;">https://forwardcode.in</p>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+
 
     <!-- Footer Section -->
     <tr>
