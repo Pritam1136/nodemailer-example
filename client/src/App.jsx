@@ -9,7 +9,7 @@ function App() {
 
   const sendOtp = async () => {
     try {
-      const response = await axios.post("http://localhost:5000/api/send-otp", {
+      const response = await axios.post("http://localhost:5010/api/send-otp", {
         email,
       });
       setIsOtpSent(true);
@@ -23,10 +23,13 @@ function App() {
 
   const verifyOtp = async () => {
     try {
-      const response = await axios.post("http://localhost:5000/api/verify-otp", {
-        email,
-        otp,
-      });
+      const response = await axios.post(
+        "http://localhost:5000/api/verify-otp",
+        {
+          email,
+          otp,
+        }
+      );
       setMessage("OTP verified successfully. Token: " + response.data.token);
     } catch (error) {
       setMessage(error.response ? error.response.data.message : "Invalid OTP");

@@ -2,7 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const { sendOtp, verifyOtp } = require("./Handler");
 
-const port = 5000;
+const port = 5010;
 const app = express();
 app.use(express.json());
 app.use(cors());

@@ -1,6 +1,7 @@
 const nodemailer = require("nodemailer");
 const jwt = require("jsonwebtoken");
 const dotenv = require("dotenv");
+const { content } = require("./content");
 
 dotenv.config();
 
@@ -36,14 +37,8 @@ const sendOtp = (req, res) => {
     from: process.env.EMAIL_USERNAME,
     to: email,
     subject: "Your OTP Code",
-    html: `
-      <h1>OTP Verification</h1>
-      <p>Your OTP code is <strong>${otp}</strong>.</p>
-      <p>Please use this code to verify your account.</p>
-      <p>If you did not request this OTP, please ignore this email.</p>
-    `,
+    html: content,
   };
-  console.log("send otp");
 
   // Send email
   transporter.sendMail(mailOptions, (error, info) => {
@@ -51,6 +46,7 @@ const sendOtp = (req, res) => {
       return res.status(500).json({ message: "Error sending OTP" });
     }
     res.status(200).json({ message: `OTP sent to ${email}`, info });
+    console.log("send otp");
 
     // Clear OTP after 10 minutes
     setTimeout(() => {
