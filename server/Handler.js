@@ -90,8 +90,6 @@ const sendOtp = (req, res) => {
     </table>
   </td>
 </tr>
-
-
     <!-- Footer Section -->
     <tr>
       <td align="start" style="padding: 1rem;">
