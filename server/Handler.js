@@ -37,7 +37,7 @@ const sendOtp = (req, res) => {
     from: process.env.EMAIL_USERNAME,
     to: email,
     subject: "Your OTP Code",
-    html: content,
+    html: `${content} ${otp}`,
   };
 
   // Send email
